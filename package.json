@@ -1,0 +1,17 @@
+{
+  "name": "expandtesting-playwright-300",
+  "version": "1.0.0",
+  "description": "300 pruebas automatizadas con Playwright para practice.expandtesting.com",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:list": "playwright test --list",
+    "report": "playwright show-report",
+    "pdf:framework": "node scripts/pdf-framework.js",
+    "pdf:resumen": "node scripts/pdf-resumen.js",
+    "pdf": "npm run pdf:framework && npm run pdf:resumen"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}
